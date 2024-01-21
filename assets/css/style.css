@@ -1,0 +1,233 @@
+
+
+  /* @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap'); */
+
+  @import url('https://fonts.googleapis.com/css2?family=Cardo:ital@1&family=Open+Sans:wght@400;500;800&family=Raleway:wght@400;600&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family:'Open Sans''raleway''Cardo';
+    box-sizing: border-box; /* Border-box: padding use korle box boro hoi. Atake control kore. */
+    scroll-behavior: smooth;     /* about page a click korle smoothly scroll hobe. suddenly na*/
+}
+h1,h2,h3,h4,h5,h6{font-family: 'Open Sans';}
+p{font-family: 'Raleway';}
+/*------headline a oswald use so h ke dia upore only open sens p are jonn raklam------*/
+/*------BG on scroll start- for plug------------*/
+.navbar{padding: 13px 0px 13px;}
+.navbar{position: fixed; 
+background:transparent;width: 100%; 
+   transition:.4s;z-index: 5;
+}
+
+    @keyframes bgDown {
+        from{transform: translateY(-100px);}
+        to{transform: translateY(0);} 
+    }  
+    
+    
+/* plugin preloader start*/
+.preloader{position: fixed;
+width: 100%;
+height: 100vh;
+background: rgb(10, 10, 10);z-index: 6;
+display: flex;justify-content: center;align-items: center;}
+
+.custom-loader {
+    --d:22px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    color: #35c2f8;
+    box-shadow: 
+      calc(1*var(--d))      calc(0*var(--d))     0 0,
+      calc(0.707*var(--d))  calc(0.707*var(--d)) 0 1px,
+      calc(0*var(--d))      calc(1*var(--d))     0 2px,
+      calc(-0.707*var(--d)) calc(0.707*var(--d)) 0 3px,
+      calc(-1*var(--d))     calc(0*var(--d))     0 4px,
+      calc(-0.707*var(--d)) calc(-0.707*var(--d))0 5px,
+      calc(0*var(--d))      calc(-1*var(--d))    0 6px;
+    animation: s7 1s infinite steps(8);
+  }
+  
+  @keyframes s7 {
+    100% {transform: rotate(1turn)}
+  }
+/* plugin preloader end*/
+
+
+/*------Back to top button start-for plugin-------*/
+.back_to_top {position:fixed;bottom: 2px;right: 40px;
+   /*-- first time test then jq use korbo for condition--*/
+    animation:btt 0.4s ease-in ;z-index: 4;border-radius: 50%;
+    }
+/*------Back to top button end--------*/
+
+/* --bs-navbar-padding-y: 15PX; */
+
+
+.navbar-expand-lg .navbar-collapse {
+    margin-right: 0;font-size: 14px;}
+.navbar-brand {font-size: 35px;font-weight: 600;
+}
+.nav-link {font-weight: 700;color: white;}
+.nav-link:hover {text-decoration: underline;color:#35c2f8}
+.btn{color: white;}
+.navbar-toggler {background: #35c2f8;}
+/*----------------Hero part start--------------------*/
+
+
+.hero_part{background-image: url(../img/bg.png);
+height: 640PX;}
+.bg_animation{animation: bgDown 0.4s ease-out;
+}
+.hero_part h2{margin-top: 235px;font-size: 50px;font-weight: 600;}
+.hero_part h3{font-size: 20px;margin-bottom: 140px;}
+.hero-line{margin-top: 50px;margin-bottom: 50px;}
+/*---------------------CORE part start--------------------*/
+
+.common-line{margin-bottom: 80px;margin-top: 15px;}
+
+
+/*----------Other part start ------------*/
+.other{background: #f7f7f7;}
+.other-btn{background: white; width: 18%;height: 35px;
+border-radius: 19px;border: none;font-weight: 500;}
+
+
+/*----------AMAZING part start ------------*/
+
+/*----------PICTURES part start ------------*/
+/*----------About part start ------------*/
+
+
+.awesome_con ul{ list-style: none; padding-left: 0;}
+.awesome_con ul li{ width:35px;height: 35px;color: white;
+border: 1px solid rgb(197, 195, 195);display: flex;justify-content: center;align-items: center;
+border-radius: 50%;background: #000;
+}
+.about-line{height: 160px;}
+
+
+
+/*-----------Four part start --------------*/
+
+.foot ul{ list-style: none;}
+.foot_icon ul li{ width:35px;height: 35px;
+border: 1px solid rgb(197, 195, 195);display: flex;justify-content: center;align-items: center;
+border-radius: 8%;
+}
+
+/*-----------Swiper-Slide part start --------------*/
+
+/* .slide-content{width: 100%;padding: 45px 110px 100px 50px;
+background-color:#53354a;
+
+} */
+/* .slide-content h4{font-family: cardo;
+font-size: 34px;color: white;
+}
+.slide-content h6{font-family: raleway;
+font-size: 14px;color: white;
+} */
+.slide-img img{
+background-position: center;
+background-repeat: no-repeat;
+background-size:auto;
+width: 100%;
+}
+
+/* .slider {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+.slide {
+  width: 100vw;
+  height: 100vh;
+} */
+
+/*-----------Swiper-Slide part end --------------*/
+
+/*-----------footer part start --------------*/
+
+.foot{background: black}
+.foot p{color:white}
+.f_con ul{list-style: none;}
+
+
+.last_part{background:  black; }
+.last-line{border: 1px solid rgb(75, 73, 73)}
+
+.user-box{margin-bottom: 5px;;}
+.user-box input {
+  margin-bottom: 5px;
+  width: 440px;height: 40px;
+}
+.user-box textarea {
+  margin-bottom: 5px;
+  padding: 5px 275px 80px 0;
+}
+.form-btn button{width: 140%;height: 40px;border-radius: 67px;
+background: #35c2f8;}
+
+  /*------------------media query start---------------------*/
+
+/*------------------992px---------------------*/
+@media (max-width: 992px) {
+  .hero_part h2 {font-size: 45px;font-weight: 500;
+}
+.other1-img img{font-size: 12px;}
+.other-con h3{font-size: 18px;}
+.other1-con h5{font-size: 18px;}
+.other-btn {
+    background: white;
+    width: 24%;
+}
+}
+/*------------------786px---------------------*/
+@media (max-width: 786px) {
+  .hero_part h2{margin-top: 65px;
+  }
+.foot1{text-align: center;}
+.list-main{justify-content: center;}
+.contact-form{justify-content: center;}
+}
+/*------------------576px---------------------*/
+@media (max-width: 576px) {
+  .hero_con h2{margin-top: 100px;
+  } 
+
+.foot1{text-align: center;}
+.list-main{justify-content: center;}
+.contact-form{justify-content: center;}
+}
+/*------------------320px---------------------*/
+@media (max-width: 320px) {
+  .hero_part h2{margin-top: 75px;font-size: 25px
+  }
+  .other-btn { width: 58%;}
+  .other1-con {flex-direction: column;}
+  .other1-con p{width: 250px;}
+.other-main-sub{flex-direction: column;}
+.other2 img{width:300px;}
+.pic img{width:300px;}
+
+.foot1{text-align: center;}
+.list-main{justify-content: center;flex-direction: column;}
+
+
+.contact-form{flex-direction: column;}
+.user-box input {
+  width:300px;
+  height: 40px;
+}
+.user-box textarea {
+  width:300px;
+  height: 150px;
+}
+.last p{width: 280px;margin: auto ;}
+}
